@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        h3{
+            margin-left: 100px;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #00bbff;
+            color: #fafafa ;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #00bbff;
+        }
+        .logo{
+            display: flex;
+            justify-content:center;
+            margin-top: 20px;
+            text-decoration: none;
+            color:#272727 ;
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #9ad5f9;
+            padding: 20px;
+            width: 400px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">
+    <a class="logo" href="index.html"> <img src="logo.jpg" alt="" width="60px" height="60px">
+        <h2>YurtaHome</h2></a>
+</div>
+
+<h3>Напишите о своем опыте:</h3>
+
+<div class="container">
+    <form action="/action_page.php">
+        <label for="fname">Ваше имя</label>
+        <input type="text" id="fname" name="firstname" placeholder="Мое имя..">
+
+        <label for="lname">Ваше фамилия</label>
+        <input type="text" id="lname" name="lastname" placeholder="Моя фамилия..">
+
+        <label for="country">Отзывы</label>
+        <select id="country" name="country">
+            <option value="australia">Загрузить фото/видео</option>
+            <option value="canada">Написать отзыв на продукцию</option>
+            <option value="usa">Письмо на новоселье</option>
+            <option value="usa">Написать о ноу-хау</option>
+        </select>
+
+        <label for="subject">Заголовок</label>
+        <textarea id="subject" name="subject" placeholder="Напишите..." style="height:200px"></textarea>
+
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+</body>
+</html>
